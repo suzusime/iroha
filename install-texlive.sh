@@ -8,11 +8,12 @@ then
   unzip install-tl.zip
   cd install-tl-*
 else
+  echo "tmp-texlive ディレクトリを生成できませんでした。終了します。"
   exit 1 # tmp-texliveを作れなかったら異常終了
 fi
 
 # インストーラーを実行
-if [[ `uname` = MSYS* || `uname` = MINGW*  ]]
+if [ $( uname | grep -e 'MSYS.*' -e 'MINGW.*') ]
 then
   # Windows系の環境の場合
   ./install-tl-windows.bat --repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
