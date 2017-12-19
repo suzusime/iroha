@@ -1,5 +1,5 @@
 # iroha
-dotfilesを落としてきたりして環境を整えるやつ
+dotfilesを落としてきたりして環境を整えるやつ。
 
 ## 使い方
 `git clone https://github.com/suzusime/iroha.git && cd iroha`
@@ -20,3 +20,10 @@ msys2の起動用バッチファイル(msys2_shell.cmd)の最初のほうで`set
 標準的な環境をセットアップするもの。まずはこれを叩く。
 
 - dotfiles の管理のためにhomeshickをインストールする。
+
+### install-texlive.sh
+TeXLiveの最新版のインストールを楽にするためのスクリプト。
+
+内部でWindows系(msysやmingw)とそれ以外とで分岐している。
+
+`curl` と `unzip` が必要。
