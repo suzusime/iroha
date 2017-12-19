@@ -19,4 +19,5 @@ msys2の起動用バッチファイル(msys2_shell.cmd)の最初のほうで`set
 ### startup.sh
 標準的な環境をセットアップするもの。まずはこれを叩く。
 
-- dotfiles の管理のためにhomeshickをインストールする。
+* dotfiles の管理のために [homeshick](https://github.com/andsens/homeshick) をインストールする。
+  * homeshick 用のリポジトリ(castle) は [kanazawa](https://github.com/suzusime/kanazawa) という名前で置いてある。金沢城～～。
